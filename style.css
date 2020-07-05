@@ -1,0 +1,620 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+   
+    
+
+}
+
+
+
+
+li, a {
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: smaller;
+
+     
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 20%;
+    background-image: url(./assets/bgk-header.png);
+    background-size: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    
+}
+
+
+.logo {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    
+}
+.tajam {
+    padding-top: 5%;
+    padding-left: 10%;
+    color:#02a7a7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    position: relative;
+    
+}
+
+#navbar {
+    overflow: hidden;
+}
+
+.nav_links {
+    list-style: none;
+    position: relative;
+    
+}
+.nav_links li {
+    display: inline-block;
+    padding: 20px 10px;
+    
+}
+
+.nav_links li a {
+    transition:  all 0.3s ease 0s;
+    text-decoration: none;
+   
+    
+}
+
+.nav_links li a:hover {
+    color: #02a7a7;
+}
+
+.hm a{
+    color: #02a7a7;
+}
+
+.banner {
+    /*position: relative;*/
+    width: 100%;
+    height: 660px;
+    background: url(./assets/bgk-header.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.5em;
+    
+    
+}
+
+.banner h1 {
+    color: aliceblue;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 0.3em;
+    margin-top: 3em;
+    padding-bottom: 1.5em;
+    font-size: x-large;
+    
+    
+}
+.banner hr {
+    border: none;
+    color: #02a7a7;
+    background-color: #02a7a7;
+    height: 0.1em;
+    width: 5%;    
+}
+
+.banner p {
+    padding: 2em 0 4em;
+    color: aliceblue;
+    text-align: center;
+    margin: 0 25%;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 100; 
+    
+
+}
+
+.btn {
+   border: solid #02a7a7 0.1em;
+   background-color: inherit;
+   padding: 0.8em;
+   color: #02a7a7;
+   cursor: pointer;
+   
+}
+.btn:hover {
+    animation: bounce 1s linear;
+}
+@keyframes bounce {
+    20%,90%,to{
+      transform: translateY(0);  
+    }
+    30%{
+        transform: translateY(-5px);
+    }
+    40%{
+        transform: translateY(-8px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    60% {transform: translateY(-15px);
+    }
+}
+.scroll {
+    scroll-margin-top: 96px;
+  }
+ 
+  
+.story {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: grid;
+    grid-template:  1fr 6em / 1fr  repeat(4, 15%);
+    padding: 6em  20% 6em 24%; 
+    line-height: 1.5em;
+}
+
+ 
+
+.story h2 {
+    
+    grid-area: 1 / 2 / span 1 / span 4 ;
+    
+}
+.story p {
+    grid-area: 1 / 2 / span 1 / span 4;
+    padding-top: 3em;
+}
+
+.btn2 {
+   border: solid #02a7a7 0.1em;
+  
+   background-color: inherit;
+   padding: 0.8em;
+   color: #02a7a7;
+   cursor: pointer;
+   grid-area: 2 / 2 / span 1 / span 1 ;
+   align-self: center;
+   justify-self: self-start;
+   font-weight: 200;
+   
+}
+.btn2:hover {
+    animation: bounce 1s linear;
+}
+@keyframes bounce {
+    20%,90%,to{
+      transform: translateY(0);  
+    }
+    30%{
+        transform: translateY(-5px);
+    }
+    40%{
+        transform: translateY(-8px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    60% {transform: translateY(-15px);
+    }
+
+}
+
+.storyvid {
+    background-image: url(./assets/bgk-middle.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    flex-direction: column;
+    background-size: cover;
+    
+}
+.storyvid p {
+    padding-top: 1em;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.expertise {
+    padding: 4em 20%;
+    display: grid;
+    grid-template: 6em repeat(2, 2fr) / 1fr 1fr 1fr;
+    grid-row: border;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.expertise h2 {
+    padding-bottom: 3em;
+}
+.expertise h2, p {
+    grid-area: 1 / 1 / span 1 / span 3;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.expertise p {
+    padding: 1em; 
+      
+}
+
+.expertise hr {
+        grid-area: 1 / 1 / span 1 / span 3;
+        align-self: flex-end;
+        justify-self: center;
+        border: none;
+        color: #02a7a7;
+        background-color: #02a7a7;
+        height: 0.1em;
+        width: 10%;  
+        margin-bottom: 1em;  
+}
+
+.x1, .x2, .x3, .x4, .x5, .x6  {
+    padding-top: 2em;
+    
+}
+
+
+.item {
+    font-size: 0.8em;
+    
+}
+.item img {
+    padding-bottom: 1em;
+}
+
+.item h4 {
+    padding-top: 2em;
+}
+
+.x1, .x2{
+    border-bottom: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+}
+.x3 {
+    border-bottom: 1px solid #dfdfdf;
+}
+.x4, .x5 {
+    border-right: 1px solid #dfdfdf;
+}
+
+.x2 {
+    margin-top: auto;
+}
+
+.teams {
+    width: 100%;
+    height: 660px;
+    background: url(./assets/bgk-header.png);
+    background-size: cover;
+    padding: 4em 20%;
+    display: grid;
+    grid-template: 6em 1fr / 1fr ;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    }
+    
+    .teams h2 {
+        padding-bottom: 3em;
+    }
+    
+    .teams h2, p {
+        grid-area: 1 / 1 / span 1 / span 3;
+        align-self: center;
+        justify-self: center;   
+    }
+    .teams p {
+        padding: 1em;
+    }
+    .teams hr {
+        grid-area: 1 / 1 / span 1 / span 3;
+        align-self: flex-end;
+        justify-self: center;
+        border: none;
+        color: #d3d6d9;
+        background-color: #d3d6d9;
+        height: 0.1em;
+        width: 10%;  
+        margin-bottom: 1em;  
+    }
+    .teampics {
+        display: grid;
+        grid-template: 15em / repeat(4, 1fr);
+        grid-gap: 2em;
+        align-items: center;
+        justify-content: center;
+        
+
+        
+    }
+    .white { 
+        background-color: inherit;
+    }
+    
+    .square {
+        border: 0.1em solid #dfdfdf;
+         
+        font-family: 'Montserrat', sans-serif;
+        background-color: aliceblue;
+        height: 10em;
+        
+    }
+
+    .rea {
+        align-self: flex-start;
+        border-bottom: 0.1em solid rgb(199, 199, 199);
+        border-right: 0.1em solid rgb(199, 199, 199);
+        border-left: 0.1em solid rgb(199, 199, 199);
+        margin-top: -5em;
+
+    }
+    
+    .teampics h4 {
+        font-size: small;
+
+        
+    }
+    .teampics p {
+        font-size: x-small;
+        color: rgb(211, 214, 218);
+    }
+    .teampics h4, p {
+        padding-top: 2em;
+    }
+    
+    .sq1 {
+       color: aliceblue;
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    .sq2 {
+        grid-area: 1 / 2 / span 1 / span 1;
+    }
+    .sq3 {
+        grid-area: 1 / 3 / span 1 / span 1;
+    }
+    .sq4 {
+        grid-area: 1 / 4 / span 1 / span 1;
+    }
+    
+    .joinus {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        grid-area: 4 / 1 / span 1 / span 1;
+        font-family: 'Montserrat', sans-serif;
+        padding-top: 4em;
+    }
+
+    .buttonen {
+        border: solid #02a7a7 0.1em;
+        background-color: inherit;
+        padding: 0.8em 2em;
+        color: #02a7a7;
+        cursor: pointer;
+        grid-area: 2 / 1 / span 1 / span 1 ;
+        align-self: center;
+        justify-self: center;
+        font-weight: 200;
+        
+    }
+    .joinus h3 {
+        font-weight: 100;
+        color: aliceblue;
+        
+    }
+
+    .form {
+        margin: 4em 20%;
+        display: grid;
+        grid-template: 1fr / 50% 50%;
+        grid-gap: 4em;
+    }
+    
+    .container {
+        max-width: 400px;
+        width: 100%;
+        
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+      }
+    .container h4 {
+        padding-bottom: 2em;
+    }
+     
+      
+      
+      
+      fieldset {
+        border: medium none !important;
+        margin: 0 0 10px;
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+      }
+      
+      #contact input[type="text"],
+      #contact input[type="email"],
+      #contact input[type="tel"],
+      #contact input[type="url"],
+      #contact textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        background: #FFF;
+        margin: 0 0 5px;
+        padding: 10px;
+      }
+      
+      
+      
+      #contact textarea {
+        height: 200px;
+        max-width: 100%;
+        resize: none;
+      }
+      
+      #contact button[type="submit"] {
+        cursor: pointer;
+        width: 8em;
+        border: solid #02a7a7 0.1em;
+        color: #02a7a7;
+        background: inherit;
+        
+        margin: 0 0 5px;
+        padding: 10px;
+        font-size: 15px;
+      }
+      .marki h4 {
+          padding-bottom: 2em;
+          font-family: 'Montserrat', sans-serif;
+
+      }
+      .loga {
+          display: grid;
+          grid-area: 1 / 2 / span 1 / span 1;
+          
+      }
+      .row {
+        display: flex;
+        padding-bottom: 1em;
+      }
+      
+      .column {
+        flex: 50%;
+        padding: 5px;
+      }
+      .scroll2 {
+        scroll-margin-top: 140px;
+      }
+
+    
+.foot {
+    width: 100%;
+    height: 400px;
+    background: url(./assets/bgk-footer.png);
+    background-size: cover;
+    padding: 4em 20%;
+    display: grid;
+    grid-template:  3em 10em 1fr  / 33%  33% 33% ;
+    grid-gap: 2em;
+    text-align: flex-start;
+    align-items:flex-start;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+.tam2 {
+    padding-top: 3%;
+    padding-left: 6%;
+    color:#02a7a7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    position: relative;
+}
+.lelum {
+    grid-area: 2 / 1 / span 1 / span 1;
+    font-weight: 200;
+    font-size: small;
+    line-height: 1.5em;
+}
+
+.terms {
+    grid-area: 3 / 1 / span 1 / span 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.studio {
+    padding-top: 1.5em;
+}
+
+.adress img {
+   
+ align-self: center;
+ 
+    
+}
+    
+.adress  {
+    grid-area: 2 / 2 / span 1 / span 1;
+    display: flex;
+    flex-direction: row;
+  
+}
+.adress p {
+    padding-left: 0.7em;
+    font-size: small;
+    line-height: 1.5em;
+    font-weight: 200;
+}
+.phone {
+    grid-area: 2 / 2 / span 1 / span 1;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5em;
+}
+.phone p {
+    padding-left: 0.7em;
+    font-size: small;
+    line-height: 1.5em;
+    font-weight: 200;
+}
+
+.phone img {
+    align-self: flex-end;
+}
+.sub {
+    grid-area: 2 / 3 / span 1 / span 1;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.2em;
+}
+.sub p {
+    border: 0.1em solid aliceblue;
+    padding: 1em;
+    opacity: 0.4;
+    font-size: small;
+    margin-right: 1em;
+}
+.sub img {
+    background-color: aliceblue;
+    padding: 0.4em 1.4em;
+    width: auto;
+    opacity: 0.6;   
+}
+.socialicon {
+    grid-area: 2 / 3 / span 1 / span 1;
+    padding-top: 6em;
+}
+.copyright {
+    grid-area: 3 / 3 / span 1 / span 1;
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+    margin-right: 2em;
+
+}
